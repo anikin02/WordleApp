@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		78CAA5082C5D269100949541 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CAA5072C5D269100949541 /* AppDelegate.swift */; };
 		78CAA50A2C5D269100949541 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CAA5092C5D269100949541 /* SceneDelegate.swift */; };
-		78CAA50C2C5D269100949541 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CAA50B2C5D269100949541 /* ViewController.swift */; };
-		78CAA50F2C5D269100949541 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78CAA50D2C5D269100949541 /* Main.storyboard */; };
+		78CAA50C2C5D269100949541 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CAA50B2C5D269100949541 /* GameViewController.swift */; };
 		78CAA5112C5D269200949541 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78CAA5102C5D269200949541 /* Assets.xcassets */; };
 		78CAA5142C5D269200949541 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78CAA5122C5D269200949541 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +18,7 @@
 		78CAA5042C5D269100949541 /* WordleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78CAA5072C5D269100949541 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78CAA5092C5D269100949541 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		78CAA50B2C5D269100949541 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		78CAA50E2C5D269100949541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		78CAA50B2C5D269100949541 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		78CAA5102C5D269200949541 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78CAA5132C5D269200949541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78CAA5152C5D269200949541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +54,30 @@
 		78CAA5062C5D269100949541 /* WordleApp */ = {
 			isa = PBXGroup;
 			children = (
-				78CAA5072C5D269100949541 /* AppDelegate.swift */,
+				78CAA51D2C5D2DA100949541 /* View Controllers */,
+				78CAA51E2C5D2E0700949541 /* Game */,
 				78CAA5092C5D269100949541 /* SceneDelegate.swift */,
-				78CAA50B2C5D269100949541 /* ViewController.swift */,
-				78CAA50D2C5D269100949541 /* Main.storyboard */,
+				78CAA5072C5D269100949541 /* AppDelegate.swift */,
 				78CAA5102C5D269200949541 /* Assets.xcassets */,
 				78CAA5122C5D269200949541 /* LaunchScreen.storyboard */,
 				78CAA5152C5D269200949541 /* Info.plist */,
 			);
 			path = WordleApp;
+			sourceTree = "<group>";
+		};
+		78CAA51D2C5D2DA100949541 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				78CAA50B2C5D269100949541 /* GameViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		78CAA51E2C5D2E0700949541 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +140,6 @@
 			files = (
 				78CAA5142C5D269200949541 /* LaunchScreen.storyboard in Resources */,
 				78CAA5112C5D269200949541 /* Assets.xcassets in Resources */,
-				78CAA50F2C5D269100949541 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78CAA50C2C5D269100949541 /* ViewController.swift in Sources */,
+				78CAA50C2C5D269100949541 /* GameViewController.swift in Sources */,
 				78CAA5082C5D269100949541 /* AppDelegate.swift in Sources */,
 				78CAA50A2C5D269100949541 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +159,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		78CAA50D2C5D269100949541 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				78CAA50E2C5D269100949541 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		78CAA5122C5D269200949541 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +301,6 @@
 				INFOPLIST_FILE = WordleApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +328,6 @@
 				INFOPLIST_FILE = WordleApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
