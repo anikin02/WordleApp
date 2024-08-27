@@ -13,6 +13,11 @@
 		78DD5CD12C7D65DA0067991B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78DD5CD02C7D65DA0067991B /* Preview Assets.xcassets */; };
 		78DD5CDC2C7D66740067991B /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DD5CDB2C7D66740067991B /* GameBoardView.swift */; };
 		78DD5CDE2C7D67510067991B /* LetterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DD5CDD2C7D67510067991B /* LetterButtonView.swift */; };
+		78DD5CE02C7DD0510067991B /* GameBoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DD5CDF2C7DD0510067991B /* GameBoardModel.swift */; };
+		78DD5CE22C7DD1740067991B /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DD5CE12C7DD1740067991B /* KeyboardView.swift */; };
+		78DD5CE42C7DD39D0067991B /* WordBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DD5CE32C7DD39D0067991B /* WordBoardView.swift */; };
+		78DD5CE62C7DD4220067991B /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DD5CE52C7DD4220067991B /* LetterView.swift */; };
+		78DD5CE82C7DF1630067991B /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DD5CE72C7DF1630067991B /* Letter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		78DD5CD02C7D65DA0067991B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		78DD5CDB2C7D66740067991B /* GameBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
 		78DD5CDD2C7D67510067991B /* LetterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterButtonView.swift; sourceTree = "<group>"; };
+		78DD5CDF2C7DD0510067991B /* GameBoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardModel.swift; sourceTree = "<group>"; };
+		78DD5CE12C7DD1740067991B /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		78DD5CE32C7DD39D0067991B /* WordBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordBoardView.swift; sourceTree = "<group>"; };
+		78DD5CE52C7DD4220067991B /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
+		78DD5CE72C7DF1630067991B /* Letter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,9 @@
 				78DD5CCB2C7D65D80067991B /* ContentView.swift */,
 				78DD5CDB2C7D66740067991B /* GameBoardView.swift */,
 				78DD5CDD2C7D67510067991B /* LetterButtonView.swift */,
+				78DD5CE12C7DD1740067991B /* KeyboardView.swift */,
+				78DD5CE32C7DD39D0067991B /* WordBoardView.swift */,
+				78DD5CE52C7DD4220067991B /* LetterView.swift */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -86,6 +99,7 @@
 		78DD5CD82C7D66420067991B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				78DD5CE72C7DF1630067991B /* Letter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,6 +107,7 @@
 		78DD5CD92C7D66480067991B /* ModelView */ = {
 			isa = PBXGroup;
 			children = (
+				78DD5CDF2C7DD0510067991B /* GameBoardModel.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -169,7 +184,12 @@
 			files = (
 				78DD5CDE2C7D67510067991B /* LetterButtonView.swift in Sources */,
 				78DD5CCC2C7D65D80067991B /* ContentView.swift in Sources */,
+				78DD5CE02C7DD0510067991B /* GameBoardModel.swift in Sources */,
+				78DD5CE82C7DF1630067991B /* Letter.swift in Sources */,
+				78DD5CE42C7DD39D0067991B /* WordBoardView.swift in Sources */,
+				78DD5CE22C7DD1740067991B /* KeyboardView.swift in Sources */,
 				78DD5CCA2C7D65D80067991B /* WordleAppApp.swift in Sources */,
+				78DD5CE62C7DD4220067991B /* LetterView.swift in Sources */,
 				78DD5CDC2C7D66740067991B /* GameBoardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

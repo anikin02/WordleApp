@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct LetterButtonView: View {
-  var letter: String
+  let letter: String
+  
+  @EnvironmentObject var gameBoardModel: GameBoardModel
+  
   var body: some View {
     Button {
-      
+      gameBoardModel.enterLetter(letter: letter)
     } label: {
       Text(letter)
         .font(.system(size: 20, weight: .bold))
