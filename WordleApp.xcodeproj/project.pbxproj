@@ -12,6 +12,7 @@
 		78DD5CCE2C7D65DA0067991B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78DD5CCD2C7D65DA0067991B /* Assets.xcassets */; };
 		78DD5CD12C7D65DA0067991B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78DD5CD02C7D65DA0067991B /* Preview Assets.xcassets */; };
 		78DD5CDC2C7D66740067991B /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DD5CDB2C7D66740067991B /* GameBoardView.swift */; };
+		78DD5CDE2C7D67510067991B /* LetterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DD5CDD2C7D67510067991B /* LetterButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		78DD5CCD2C7D65DA0067991B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78DD5CD02C7D65DA0067991B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		78DD5CDB2C7D66740067991B /* GameBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
+		78DD5CDD2C7D67510067991B /* LetterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				78DD5CC92C7D65D80067991B /* WordleAppApp.swift */,
 				78DD5CCB2C7D65D80067991B /* ContentView.swift */,
 				78DD5CDB2C7D66740067991B /* GameBoardView.swift */,
+				78DD5CDD2C7D67510067991B /* LetterButtonView.swift */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78DD5CDE2C7D67510067991B /* LetterButtonView.swift in Sources */,
 				78DD5CCC2C7D65D80067991B /* ContentView.swift in Sources */,
 				78DD5CCA2C7D65D80067991B /* WordleAppApp.swift in Sources */,
 				78DD5CDC2C7D66740067991B /* GameBoardView.swift in Sources */,
