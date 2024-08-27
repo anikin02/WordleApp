@@ -11,6 +11,7 @@
 		78DD5CCC2C7D65D80067991B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DD5CCB2C7D65D80067991B /* ContentView.swift */; };
 		78DD5CCE2C7D65DA0067991B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78DD5CCD2C7D65DA0067991B /* Assets.xcassets */; };
 		78DD5CD12C7D65DA0067991B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78DD5CD02C7D65DA0067991B /* Preview Assets.xcassets */; };
+		78DD5CDC2C7D66740067991B /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DD5CDB2C7D66740067991B /* GameBoardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		78DD5CCB2C7D65D80067991B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		78DD5CCD2C7D65DA0067991B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78DD5CD02C7D65DA0067991B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		78DD5CDB2C7D66740067991B /* GameBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		78DD5CC82C7D65D80067991B /* WordleApp */ = {
 			isa = PBXGroup;
 			children = (
-				78DD5CC92C7D65D80067991B /* WordleAppApp.swift */,
-				78DD5CCB2C7D65D80067991B /* ContentView.swift */,
+				78DD5CD92C7D66480067991B /* ModelView */,
+				78DD5CD82C7D66420067991B /* Model */,
+				78DD5CD72C7D66360067991B /* VIew */,
 				78DD5CCD2C7D65DA0067991B /* Assets.xcassets */,
 				78DD5CCF2C7D65DA0067991B /* Preview Content */,
 			);
@@ -65,6 +68,30 @@
 				78DD5CD02C7D65DA0067991B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		78DD5CD72C7D66360067991B /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				78DD5CC92C7D65D80067991B /* WordleAppApp.swift */,
+				78DD5CCB2C7D65D80067991B /* ContentView.swift */,
+				78DD5CDB2C7D66740067991B /* GameBoardView.swift */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		78DD5CD82C7D66420067991B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		78DD5CD92C7D66480067991B /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +166,7 @@
 			files = (
 				78DD5CCC2C7D65D80067991B /* ContentView.swift in Sources */,
 				78DD5CCA2C7D65D80067991B /* WordleAppApp.swift in Sources */,
+				78DD5CDC2C7D66740067991B /* GameBoardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
