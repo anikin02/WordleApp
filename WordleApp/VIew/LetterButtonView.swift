@@ -21,7 +21,7 @@ struct LetterButtonView: View {
         .foregroundStyle(.white)
     }
     .frame(width: 30, height: 40)
-    .background(.gray)
+    .background(Color(gameBoardModel.getNameColorButton(letter: letter)))
     .clipShape(RoundedRectangle(cornerRadius: 5))
   }
 }

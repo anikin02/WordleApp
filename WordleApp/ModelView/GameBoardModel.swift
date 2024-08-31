@@ -10,7 +10,14 @@ import Foundation
 class GameBoardModel: ObservableObject {
   @Published var boardWords: [[Letter]] = [[]]
   
-  let correctWord = "OCEAN"
+  var level: Level = .easy
+  let words = Words()
+  
+  var correctWord: String
+  
+  init() {
+    correctWord = words.getRandomWord(level: level).uppercased()
+  }
   
   private var wordCounter = 0
   
@@ -71,5 +78,14 @@ class GameBoardModel: ObservableObject {
     } else {
       return "appGray"
     }
+  }
+  
+  func getNameColorButton(letter: String) -> String {
+    for plate in boardWords[wordCounter] {
+      if letter == plate.letter {
+        return plate.colorName
+      }
+    }
+    return "appGray"
   }
 }
