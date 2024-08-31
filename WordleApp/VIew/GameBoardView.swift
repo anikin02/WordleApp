@@ -9,6 +9,7 @@ import SwiftUI
 
 struct GameBoardView: View {
   let level: Level
+  @State var showAlert = false
   
   @ObservedObject var gameBoardModel: GameBoardModel
   
@@ -25,6 +26,13 @@ struct GameBoardView: View {
       Spacer()
       KeyboardView()
         .environmentObject(gameBoardModel)
+    }
+    .alert(gameBoardModel.alertTitle, isPresented: $gameBoardModel.showAlert) {
+      Button("Restart") {
+        gameBoardModel.newGame()
+      }
+    } message: {
+      Text(gameBoardModel.alertDescription)
     }
   }
 }

@@ -10,6 +10,11 @@ import Foundation
 class GameBoardModel: ObservableObject {
   let level: Level
   @Published var boardWords: [[Letter]] = [[]]
+  @Published var showAlert = false
+  var alertTitle = "You are win!"
+  var alertDescription = ""
+  
+  var stateGame: StateGame = .playing
   
   let words = Words()
   var correctWord: String
@@ -17,6 +22,7 @@ class GameBoardModel: ObservableObject {
   init(level: Level) {
     self.level = level
     correctWord = words.getRandomWord(level: level).uppercased()
+    print(correctWord)
   }
   
   private var wordCounter = 0
@@ -38,12 +44,16 @@ class GameBoardModel: ObservableObject {
   }
   
   func nextEnterWord() {
-    guard wordCounter < 5 else {
+    guard wordCounter < 4 else {
+      stateGame = .lose
+      checkWord()
+      setAlert()
       return
     }
     
     if boardWords[wordCounter].count == 5 {
       checkWord()
+      setAlert()
       wordCounter += 1
       boardWords.append([])
     } else {
@@ -52,6 +62,14 @@ class GameBoardModel: ObservableObject {
   }
   
   func checkWord() {
+    var inputWord = ""
+    for letter in boardWords[wordCounter] {
+      inputWord += letter.letter
+    }
+    if inputWord == correctWord {
+      stateGame = .win
+    }
+    
     for (index, char) in correctWord.enumerated() {
       if index < boardWords[wordCounter].count {
         if String(char) == boardWords[wordCounter][index].letter {
@@ -79,4 +97,28 @@ class GameBoardModel: ObservableObject {
       return "appGray"
     }
   }
+  
+  func setAlert() {
+    if stateGame == .win {
+      alertTitle = "You have WON!"
+      showAlert = true
+    } else if stateGame == .lose {
+      alertTitle = "You have lost!"
+      showAlert = true
+    }
+    
+    alertDescription = "Correct word: \(correctWord)"
+  }
+  
+  func newGame() {
+    correctWord = words.getRandomWord(level: level)
+    boardWords = [[]]
+    wordCounter = 0
+  }
+}
+
+enum StateGame {
+  case playing
+  case win
+  case lose
 }
