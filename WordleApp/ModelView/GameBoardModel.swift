@@ -8,14 +8,14 @@
 import Foundation
 
 class GameBoardModel: ObservableObject {
+  let level: Level
   @Published var boardWords: [[Letter]] = [[]]
   
-  var level: Level = .easy
   let words = Words()
-  
   var correctWord: String
   
-  init() {
+  init(level: Level) {
+    self.level = level
     correctWord = words.getRandomWord(level: level).uppercased()
   }
   
@@ -78,14 +78,5 @@ class GameBoardModel: ObservableObject {
     } else {
       return "appGray"
     }
-  }
-  
-  func getNameColorButton(letter: String) -> String {
-    for plate in boardWords[wordCounter] {
-      if letter == plate.letter {
-        return plate.colorName
-      }
-    }
-    return "appGray"
   }
 }

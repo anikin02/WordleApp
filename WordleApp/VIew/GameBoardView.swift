@@ -8,7 +8,14 @@
 import SwiftUI
 
 struct GameBoardView: View {
-  @ObservedObject var gameBoardModel = GameBoardModel()
+  let level: Level
+  
+  @ObservedObject var gameBoardModel: GameBoardModel
+  
+  init(level: Level) {
+    self.level = level
+    self.gameBoardModel = GameBoardModel(level: level)
+  }
   
   var body: some View {
     VStack {
@@ -20,8 +27,4 @@ struct GameBoardView: View {
         .environmentObject(gameBoardModel)
     }
   }
-}
-
-#Preview {
-  GameBoardView()
 }
