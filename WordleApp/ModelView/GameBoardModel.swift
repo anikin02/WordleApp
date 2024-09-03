@@ -111,9 +111,10 @@ class GameBoardModel: ObservableObject {
   }
   
   func newGame() {
-    correctWord = words.getRandomWord(level: level)
+    correctWord = words.getRandomWord(level: level).uppercased()
     boardWords = [[]]
     wordCounter = 0
+    showAlert = false
   }
 }
 
