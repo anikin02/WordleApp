@@ -115,6 +115,7 @@ class GameBoardModel: ObservableObject {
     boardWords = [[]]
     wordCounter = 0
     showAlert = false
+    stateGame = .playing
   }
 }
 

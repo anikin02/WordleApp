@@ -9,8 +9,6 @@ import SwiftUI
 
 struct GameBoardView: View {
   let level: Level
-  @State var showAlert = false
-  
   @ObservedObject var gameBoardModel: GameBoardModel
   
   init(level: Level) {
