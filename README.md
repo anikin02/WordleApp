@@ -1,6 +1,6 @@
 # WordleApp
 
-![Demo](demo.gif)
+![Demo](Demo.gif)
 
 WordleApp is an application developed in Swift using SwiftUI in Xcode 15. It is a clone of the Wordle game.
 
